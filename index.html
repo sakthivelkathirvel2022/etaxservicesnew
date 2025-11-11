@@ -1,285 +1,149 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>E-Tax Services Vellore — GST | Income Tax | Company Secretary | Digital Signature</title>
-  <meta name="description" content="E-Tax Services Vellore — GST registration & returns, Income Tax filing, Company Secretary services and Digital Signature solutions." />
-  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ETAX SERVICES | GST • Income Tax • Digital Signature • CS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f3f5f7;
+            color: #222;
+        }
 
-  <style>
-    :root{
-      --brand:#0f9d58;
-      --brand-dark:#0c7a45;
-      --muted:#6b7280;
-      --container:1100px;
-      --radius:10px;
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      color-scheme: light;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      background: linear-gradient(180deg,#f8faf9 0%, #ffffff 60%);
-      color:#111827;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      line-height:1.45;
-    }
-    .wrap{max-width:var(--container);margin:0 auto;padding:28px}
-    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
-    .brand{display:flex;gap:12px;align-items:center}
-    .logo{
-      width:56px;height:56px;border-radius:12px;background:var(--brand);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:20px;box-shadow:0 8px 20px rgba(15,157,88,0.12)
-    }
-    nav a{margin-left:14px;color:var(--muted);text-decoration:none;font-weight:600}
-    nav a.cta{background:var(--brand);color:#fff;padding:8px 12px;border-radius:8px}
-    .hero{display:grid;grid-template-columns:1fr;gap:22px;align-items:center;padding:36px 0}
-    .hero-card{background:rgba(255,255,255,0.85);border-radius:var(--radius);padding:24px;box-shadow:0 6px 30px rgba(20,20,30,0.04)}
-    h1{font-size:28px;margin:0;color:#0f172a}
-    .lead{margin-top:10px;color:var(--muted)}
-    .hero-cta{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
-    .btn{display:inline-block;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700}
-    .btn-prim{background:var(--brand);color:#fff}
-    .btn-sec{border:2px solid var(--brand);color:var(--brand);background:transparent}
-    .services{display:grid;grid-template-columns:1fr;gap:14px;margin-top:30px}
-    .service{background:#fff;border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(15,23,42,0.04);border:1px solid rgba(15,23,42,0.03)}
-    .service h3{margin:0 0 8px 0;color:#0f172a}
-    .service p{margin:0;color:var(--muted)}
-    .grid-3{display:grid;gap:14px;grid-template-columns:1fr}
-    .contact{display:grid;grid-template-columns:1fr;gap:18px;margin-top:26px}
-    .contact form{background:#fff;padding:18px;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.04)}
-    label{display:block;font-size:13px;margin-bottom:6px;color:var(--muted)}
-    input,textarea,select{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e9ee;background:#fff;font-size:14px}
-    textarea{min-height:110px;resize:vertical}
-    footer{margin-top:36px;padding:18px 0;color:var(--muted);font-size:14px;border-top:1px solid rgba(15,23,42,0.04)}
-    @media(min-width:768px){
-      .hero{grid-template-columns:1fr 420px}
-      .grid-3{grid-template-columns:repeat(3,1fr)}
-      .services{grid-template-columns:repeat(3,1fr)}
-      .contact{grid-template-columns:1fr 380px}
-    }
-  </style>
+        header {
+            background: #004b8d;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #033b6b;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 12px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        section {
+            padding: 25px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #004b8d;
+        }
+
+        .services-list li {
+            background: white;
+            margin: 8px 0;
+            padding: 12px;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: #033b6b;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+            border-radius: 8px;
+        }
+
+        .contact-box {
+            background: white;
+            padding: 15px;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .btns a {
+            display: inline-block;
+            margin: 8px 5px;
+            padding: 10px 16px;
+            background: #004b8d;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+
+        .btns a:hover {
+            background: #022f4c;
+        }
+    </style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div class="brand">
-        <div class="logo">E</div>
-        <div>
-          <div style="font-weight:800">E-Tax Services</div>
-          <div style="font-size:12px;color:var(--muted)">Vellore — Digital Tax & Compliance</div>
-        </div>
-      </div>
 
-      <nav>
-        <a href="#services">Services</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#about">About Us</a>
-        <a href="#contact" class="cta btn btn-prim">Contact</a>
-      </nav>
+    <header>
+        <h1>ETAX SERVICES</h1>
+        <p>Best Services related to E-Mudra, GST, Company Secretary, TDS, Income Tax Filing, Returns & Digital Signature with Quality Support</p>
     </header>
 
-    <section class="hero">
-      <div class="hero-card">
-        <h1>Professional GST, Income Tax, Company Secretary & Digital Signature services</h1>
-        <p class="lead">We help individuals, small businesses and firms in Vellore with online filing, GST compliance, company secretarial work and secure digital signatures — fast, reliable, and affordable.</p>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="#location">Location</a>
+    </nav>
 
-        <div class="hero-cta">
-          <a class="btn btn-prim" href="#contact">Request a Call</a>
-          <a class="btn btn-sec" href="#services">View Services</a>
-        </div>
-
-        <div style="margin-top:18px;color:var(--muted);font-size:13px">Walk-ins welcome • Remote service available • Free initial consultation</div>
-      </div>
-
-      <aside style="align-self:start">
-        <div class="hero-card">
-          <strong style="display:block">Book a free consultation</strong>
-          <p style="margin:8px 0;color:var(--muted)">Leave your details and we will call you back.</p>
-
-          <form id="leadForm" onsubmit="submitLead(event)" style="display:grid;gap:8px">
-            <input type="text" id="name" placeholder="Full name" required />
-            <input type="tel" id="phone" placeholder="Phone (WhatsApp preferred)" required />
-            <select id="service">
-              <option value="">Choose service</option>
-              <option>GST Registration / Returns</option>
-              <option>Income Tax Filing (ITR)</option>
-              <option>Company Secretary Services</option>
-              <option>Digital Signature (DSC)</option>
-            </select>
-            <button type="submit" class="btn btn-prim">Request Call</button>
-            <div id="leadMsg" style="font-size:13px;color:var(--muted);margin-top:6px"></div>
-          </form>
-        </div>
-      </aside>
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul class="services-list">
+            <li>✅ Income Tax Filing & Returns</li>
+            <li>✅ GST Registration & Monthly Filing</li>
+            <li>✅ Company Secretary (CS) Services</li>
+            <li>✅ Digital Signature Certificate (DSC)</li>
+            <li>✅ TDS Filing & Compliance</li>
+            <li>✅ E-Mudra Services</li>
+        </ul>
     </section>
 
-    <!-- ABOUT US SECTION -->
-    <section id="about" style="margin-top:22px;padding:24px; background:#fff;border-radius:12px;box-shadow:0 8px 20px rgba(2,6,23,0.04)">
-      <h2 style="margin:0 0 12px 0">About Us</h2>
-      <p>We provide the best services related to E-Mudra, GST, Company Secretary compliance, TDS, Income Tax filing and returns, along with Digital Signature support — ensuring high-quality and customer-focused service.</p>
-    </section>
-
-    <section id="services" style="margin-top:22px">
-      <h2 style="margin:0 0 12px 0">Our Services</h2>
-      <div class="services">
-        <div class="service">
-          <h3>GST — Registration & Returns</h3>
-          <p>GST registrations, monthly/quarterly returns, reconciliation, GST audit assistance and advisory for businesses of all sizes.</p>
-        </div>
-
-        <div class="service">
-          <h3>Income Tax — Filing & Advisory</h3>
-          <p>Income Tax Return filing (individual, HUF, business), tax planning, notices & responses, and tax optimization strategies.</p>
-        </div>
-
-        <div class="service">
-          <h3>Company Secretary (CS)</h3>
-          <p>Company formation, annual filings, ROC compliance, board/secretarial support and MSME / GST linked services.</p>
-        </div>
-
-        <div class="service">
-          <h3>Digital Signature (DSC)</h3>
-          <p>Class 2 & 3 digital signatures for directors, CA/CS, secure e-filing, document signing and DSC-based authentication services.</p>
-        </div>
-
-        <div class="service">
-          <h3>Business Accounting & Bookkeeping</h3>
-          <p>End-to-end bookkeeping, cloud accounting setup, invoicing & GST ledger reconciliation.</p>
-        </div>
-
-        <div class="service">
-          <h3>Compliance & Advisory</h3>
-          <p>Legal & tax compliance advisory, representation before authorities and customized packages for MSMEs.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="pricing" style="margin-top:20px">
-      <h2 style="margin:0 0 12px 0">Sample Pricing</h2>
-      <div class="grid-3">
-        <div class="service">
-          <h3>Starter</h3>
-          <p><strong>₹999</strong> — ITR basic / 1 GST return (simple)</p>
-        </div>
-        <div class="service">
-          <h3>Standard</h3>
-          <p><strong>₹2999</strong> — ITR business, monthly GST support</p>
-        </div>
-        <div class="service">
-          <h3>Premium</h3>
-          <p><strong>₹6999</strong> — Full service, CS support, priority handling</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" style="margin-top:22px">
-      <h2 style="margin:0 0 12px 0">Contact & Location</h2>
-
-      <div class="contact">
-        <div style="padding:12px">
-          <div style="background:#fff;padding:16px;border-radius:12px;box-shadow:0 8px 20px rgba(2,6,23,0.04)">
-            <h3 style="margin:0 0 8px 0">Visit or Call Us</h3>
-            <p style="margin:0 0 12px;color:var(--muted)">Reach out via phone, email or visit our office in Vellore.</p>
-
-            <div style="margin-bottom:12px">
-              <strong>Address:</strong><br />
-              FIRST FLOOR, L.M BACK SIDE OF RUSI HOTEL, NO 7, Veera Koil St, Velapadi,<br />
-              Vellore, Tamil Nadu 632001<br />
-              <a href="https://www.google.com/maps/place/ETAX+SERVICES/@12.9072304,79.1335957,17z" target="_blank" class="btn btn-sec" style="margin-top:8px">View on Google Maps</a>
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <div class="contact-box">
+            <p><b>Address:</b> FIRST FLOOR, L.M BACK SIDE OF RUSI HOTEL, NO 7, Veera Koil St, Velapadi, Vellore, Tamil Nadu 632001</p>
+            <p><b>Phone:</b> <a href="tel:+91">+91 XXXXX XXXXX</a></p>
+            <p><b>Email:</b> etax.services@gmail.com (optional to update)</p>
+            <div class="btns">
+                <a href="tel:+91">📞 Call Now</a>
+                <a href="https://wa.me/91" target="_blank">💬 WhatsApp</a>
             </div>
-
-            <div class="meta"><strong>Phone:</strong> <span style="color:var(--muted)">+91-8667752965</span></div>
-            <div class="meta"><strong>Email:</strong> <span style="color:var(--muted)">thanicahcet786@gmail.com</span></div>
-          </div>
         </div>
+    </section>
 
-        <div>
-          <form id="contactForm" onsubmit="sendContact(event)" style="background:#fff;padding:16px;border-radius:12px;box-shadow:0 8px 20px rgba(2,6,23,0.04)">
-            <label for="cname">Name</label>
-            <input id="cname" required placeholder="Your full name" />
+    <section id="location">
+        <h2>Our Location</h2>
 
-            <label for="cphone">Phone / Email</label>
-            <input id="cphone" required placeholder="Phone or email" />
+        <p><a href="https://www.google.com/maps/place/ETAX+SERVICES/@12.9072356,79.1310208,17z/data=!4m6!3m5!1s0x3bad398a738bb477:0x95b39350793e3e4e!8m2!3d12.9072304!4d79.1335957!16s%2Fg%2F11g1drbq_f" target="_blank">
+            📍 Open in Google Maps
+        </a></p>
 
-            <label for="cservice">Service</label>
-            <select id="cservice">
-              <option>Choose service</option>
-              <option>GST</option>
-              <option>Income Tax</option>
-              <option>Company Secretary</option>
-              <option>Digital Signature</option>
-            </select>
-
-            <label for="cmsg">Message</label>
-            <textarea id="cmsg" placeholder="Short message (optional)"></textarea>
-
-            <div style="margin-top:10px;display:flex;gap:8px">
-              <button class="btn btn-prim" type="submit">Send Request</button>
-              <button class="btn btn-sec" type="button" onclick="clearContact()">Clear</button>
-            </div>
-            <div id="contactMsg" style="margin-top:8px;color:var(--muted);font-size:13px"></div>
-          </form>
-        </div>
-      </div>
+        <!-- Embedded Google Map -->
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.3314148103594!2d79.1335957!3d12.9072304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad398a738bb477%3A0x95b39350793e3e4e!2sETAX%20SERVICES!5e0!3m2!1sen!2sin!4v1700000000000"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
     </section>
 
     <footer>
-      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
-        <div>© <span id="year"></span> E-Tax Services Vellore</div>
-        <div style="color:var(--muted)">
-          Made with care • Trusted local tax consultants • <a href="https://share.google/YQCRgHr3my1SAdWFl" target="_blank" style="color:var(--brand); text-decoration:underline">Company Info</a>
-        </div>
-      </div>
+        <p>© 2025 ETAX SERVICES. All Rights Reserved.</p>
     </footer>
-  </div>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    function submitLead(e){
-      e.preventDefault();
-      const name = document.getElementById('name').value.trim();
-      const phone = document.getElementById('phone').value.trim();
-      const service = document.getElementById('service').value;
-      if(!name || !phone || !service){
-        document.getElementById('leadMsg').textContent = 'Please fill all fields.';
-        return;
-      }
-      const leads = JSON.parse(localStorage.getItem('etax_leads')||'[]');
-      leads.push({name, phone, service, created: new Date().toISOString()});
-      localStorage.setItem('etax_leads', JSON.stringify(leads));
-      document.getElementById('leadMsg').textContent = 'Thanks — we will call you shortly.';
-      e.target.reset();
-    }
-
-    function sendContact(e){
-      e.preventDefault();
-      const name = document.getElementById('cname').value.trim();
-      const phone = document.getElementById('cphone').value.trim();
-      const service = document.getElementById('cservice').value;
-      const msg = document.getElementById('cmsg').value.trim();
-
-      if(!name || !phone || service === 'Choose service'){
-        document.getElementById('contactMsg').textContent = 'Please fill name, contact and choose a service.';
-        return;
-      }
-
-      const contacts = JSON.parse(localStorage.getItem('etax_contacts')||'[]');
-      contacts.push({name, phone, service, msg, created: new Date().toISOString()});
-      localStorage.setItem('etax_contacts', JSON.stringify(contacts));
-      document.getElementById('contactMsg').textContent = 'Request received. We will contact you soon.';
-      e.target.reset();
-    }
-
-    function clearContact(){
-      document.getElementById('cname').value='';
-      document.getElementById('cphone').value='';
-      document.getElementById('cservice').selectedIndex=0;
-      document.getElementById('cmsg').value='';
-      document.getElementById('contactMsg').textContent='';
-    }
-  </script>
 </body>
 </html>
